@@ -23,7 +23,15 @@ class BinaryTree():
             self.right = bNode
         else:
             print ('Erro!!!, Já existe um nó a direita')     
-     
+
+    def removeRight(self):
+        self.right = None
+
+    def removeLeft(self):
+        self.leftt = None
+        
+    def updateInfo(self, info):
+        self.info = info
     
     def pre_order(self):
         print(self.info)
@@ -72,6 +80,3 @@ BT6 = BinaryTree(9, BT2, BT3)
 BT7 = BinaryTree(8, BT6, None)
 BT8 = BinaryTree(2, BT4, BT5)
 BT9 = BinaryTree(7, BT8, BT7)
-
-
-
