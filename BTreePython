@@ -1,0 +1,73 @@
+# MURILO ERHARDT
+# BINARY TREE PYTHON
+# ÁRVORE BINÁRIA PYTHON
+
+class BinaryTree():
+    
+    #construtor 
+    def __init__(self, bInfo, bLeft, bRight):      
+        self.left = bLeft
+        self.right = bRight
+        self.info = bInfo
+        
+    #metodo para inserir a esquerda de um nó   
+    def insertLeft(self, bNode):
+        if(self.left == None):        
+            self.left = bNode
+        else:
+            print ('Erro!!!, Já existe um nó a esquerda')
+    
+    #metodo para inserir a esquerda de um nó 
+    def insertRight(self, bNode):
+        if(self.right == None):        
+            self.right = bNode
+        else:
+            print ('Erro!!!, Já existe um nó a direita')     
+     
+    
+    def pre_order(self):
+        print(self.info)
+        if(self.left != None):
+            (self.left).pre_order()
+        if(self.right != None):
+            (self.right).pre_order()
+            
+    def pos_order(self):
+        if(self.left != None):
+            (self.left).pos_order()       
+        print(self.info)
+        if(self.right != None):
+            (self.right).pos_order()
+            
+    def final_order(self):
+        if(self.left != None):
+            (self.left).final_order()
+        if(self.right != None):
+            (self.right).final_order()
+        print(self.info)
+        
+    
+    def printInfo(self):
+        print ("Endereco do objeto: ", self)
+        print ('Informacao: %d' % (self.info))
+        print ("Endereco esquerdo: ", self.left)
+        print ("Endereco direito: ", self.right)
+
+
+
+# árvore criada com base em http://imgur.com/wKB6UTt
+# a árvore inicia em BT9, começe.
+# para chama um método use ex: BT9.pre_order()
+
+BT1 = BinaryTree(7, None, None)
+BT2 = BinaryTree(11, None, None)
+BT3 = BinaryTree(10, None, None)
+BT4 = BinaryTree(4, None, None)
+BT5 = BinaryTree(5, BT1, None)
+BT6 = BinaryTree(9, BT2, BT3)
+BT7 = BinaryTree(8, BT6, None)
+BT8 = BinaryTree(2, BT4, BT5)
+BT9 = BinaryTree(7, BT8, BT7)
+
+
+
