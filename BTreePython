@@ -54,10 +54,14 @@ class BinaryTree():
         print ("Endereco direito: ", self.right)
 
 
+# Tree created based: http://imgur.com/wKB6UTt
+# Árvore criada com base em: http://imgur.com/wKB6UTt
 
-# árvore criada com base em http://imgur.com/wKB6UTt
-# a árvore inicia em BT9, começe.
-# para chama um método use ex: BT9.pre_order()
+# A árvore inicia em BT9, começe.
+# The tree starts at object BT9
+
+# Para chama um método use ex: BT9.pre_order()
+# To call a method use: BT9.pre_order()
 
 BT1 = BinaryTree(7, None, None)
 BT2 = BinaryTree(11, None, None)
