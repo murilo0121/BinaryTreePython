@@ -80,3 +80,40 @@ BT6 = BinaryTree(9, BT2, BT3)
 BT7 = BinaryTree(8, BT6, None)
 BT8 = BinaryTree(2, BT4, BT5)
 BT9 = BinaryTree(7, BT8, BT7)
+
+_____________________________________________________
+
+
+
+class Llist():
+    
+    #construtor 
+    def __init__(self, linfo, lnext):      
+        self.info = linfo
+        self.next = lnext
+        
+    #
+    def insertlist(self, LlIST):
+        if(self.next == None):        
+            self.next = LlIST
+        else:   
+             print ('impossivel inserir')
+        
+    def deletelist(self):
+        self.next = None
+    
+    def printList(self):
+        print(self.info)
+        if(self.next != None):
+            (self.next).printList()
+    
+L1 = Llist(2,None)
+L2 = Llist(3, L1)
+L3 = Llist(4, L2)
+L4 = Llist(5, None)
+
+ 
+    
+        
+        
+   
