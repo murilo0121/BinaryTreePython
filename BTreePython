@@ -83,6 +83,24 @@ BT9 = BinaryTree(7, BT8, BT7)
 
 _____________________________________________________
 
+#inicio da implementação do grafo
+
+
+class Vertice():
+    def __init__(self, Nnome):
+        self.nome = Nnome
+    def imprimeVertice(self):   
+        print(self.nome)
+    
+        
+class Aresta():
+    def __init__(self, V1, V2):
+        self.vertice1 = V1
+        self.vertice2 = V2
+    
+    def imprimeVerticesDeAresta(self):
+         self.vertice1.imprimeVertice()
+         self.vertice2.imprimeVertice()
 
 
 class Llist():
@@ -106,11 +124,23 @@ class Llist():
         print(self.info)
         if(self.next != None):
             (self.next).printList()
-    
-L1 = Llist(2,None)
-L2 = Llist(3, L1)
-L3 = Llist(4, L2)
-L4 = Llist(5, None)
+            
+
+class Grafo():
+    def __init__(self,vertices, arestas):
+        self.vertices = vertices
+        self.arestas = arestas
+  
+      
+V1= Vertice(3)
+V2= Vertice(4)
+A1= Aresta(V1,V2)
+
+
+
+
+
+      
 
  
     
