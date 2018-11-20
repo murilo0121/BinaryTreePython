@@ -135,15 +135,3 @@ class Grafo():
 V1= Vertice(3)
 V2= Vertice(4)
 A1= Aresta(V1,V2)
-
-
-
-
-
-      
-
- 
-    
-        
-        
-   
